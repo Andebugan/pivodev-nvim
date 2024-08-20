@@ -1,5 +1,18 @@
+# Session file
+.session.vim
+
+# Dockerfiles
+Dockerfile
+
+# configuration file
+local_config.lua
+
+# Lazy files
+lazy-lock.*
+
 # Compiled Lua sources
 luac.out
+*.luarc.json
 
 # luarocks build files
 *.src.rock
@@ -38,4 +51,3 @@ luac.out
 *.i*86
 *.x86_64
 *.hex
-
