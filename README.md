@@ -1,6 +1,8 @@
 # pivodev-nvim
 Neovim configuration files for pivodev devcontainer builds
 
+![pivoscreen](https://github.com/user-attachments/assets/1f333157-aecf-412f-8274-9c6547276f7c)
+
 ## Neovim
 To update neovim configuration from repo (if installed inside container) you can simply `git pull` inside repo or use `<leader>U` keymap wich basically does the same. 
 
