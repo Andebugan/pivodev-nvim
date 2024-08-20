@@ -6,6 +6,25 @@ Neovim configuration files for pivodev devcontainer builds
 ## Neovim
 To update neovim configuration from repo (if installed inside container) you can simply `git pull` inside repo or use `<leader>U` keymap wich basically does the same. 
 
+What to expect:
+- [ ] development
+    - [x] code writing
+        - [x] sytax highlight/analysis (nvim-treesitter)
+        - [x] code completions (luasnip, nvim-cmp)
+        - [x] code suggestions (mason, lspconfig)
+    - [x] git integration (gitsigns, vim-fugitive)
+    - [ ] documentation integration
+    - [x] project management (telescope projects)
+    - [x] docker integration
+    - [ ] Markdown/LaTeX preview (live, if possible)
+- [x] navigation
+    - [x] file navigator (oil)
+    - [x] file/dir search (telescope)
+- [x] utility
+    - [x] pivo screen
+    - [x] custom bash line config
+        - [x] git info
+
 ### Config file structure
 Package structure:
 - init.lua - contains neovim settings (keybindings, autocommands, package manager initialization)
