@@ -1,7 +1,7 @@
 -- basic settings
 vim.o.number = true               -- enable line numbers
-vim.o.ruler = false               -- disable ruler
-vim.o.relativenumber = false      -- enable relative line numbers
+vim.o.ruler = true                -- enable ruler
+vim.o.relativenumber = true       -- enable relative line numbers
 
 vim.o.tabstop = 4                 -- number of spaces a tab represents
 vim.o.shiftwidth = 4              -- number of spaces in each identations
