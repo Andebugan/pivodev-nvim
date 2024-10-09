@@ -40,7 +40,7 @@ return
             vim.keymap.set('n', '<leader>bua', '<cmd>Hbac unpin_all<cr>')
             vim.keymap.set('n', '<leader>bta', '<cmd>Hbac toggle_autoclose<cr>')
 
-            vim.keymap.set('n', '<leader>btt', '<cmd>Telescope hbac buffers<cr>')
+            vim.keymap.set('n', '<leader>fb', '<cmd>Telescope hbac buffers<cr>')
         end
     }
 }
