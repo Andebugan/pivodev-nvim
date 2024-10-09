@@ -19,14 +19,18 @@ return
                     use_default_mappings = true, -- false to not include the mappings below
                     mappings = {
                         i = {
-                            ["<M-c>"] = actions.close_unpinned,
-                            ["<M-d>"] = actions.delete_buffer,
+                            ["<M-x>"] = actions.close_unpinned,
+                            ["<M-b>"] = actions.delete_buffer,
                             ["<M-a>"] = actions.pin_all,
                             ["<M-u>"] = actions.unpin_all,
                             ["<M-p>"] = actions.toggle_pin,
                         },
                         n = {
-                            -- as above
+                            ["x"] = actions.close_unpinned,
+                            ["b"] = actions.delete_buffer,
+                            ["a"] = actions.pin_all,
+                            ["u"] = actions.unpin_all,
+                            ["p"] = actions.toggle_pin,
                         },
                     },
                 },
