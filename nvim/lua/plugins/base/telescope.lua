@@ -1,6 +1,9 @@
 return {
     {
         "ahmedkhalf/project.nvim",
+        dependencies = {
+            'nvim-telescope/telescope.nvim'
+        },
         config = function()
             require("project_nvim").setup({
                 detection_methods = { "pattern" },
@@ -11,8 +14,16 @@ return {
                     "venv",
                     "note.tex",
                     ".session.vim"
-                }
+                },
             })
+            -- mappings
+            -- normal insert action
+            -- f      <C-f>  find_project_files
+            -- b      <C-b>  browse_project_files
+            -- d      <C-d>  delete_project
+            -- s      <C-s>  search_in_project_files
+            -- r      <C-r>  recent_project_files
+            -- w      <C-w>  change_working_directory
         end
     },
     {
@@ -69,7 +80,17 @@ return {
                         sort_mru = true,
                         ignore_current_buffer = true,
                         sort_lastused = true
-                    }
+                    },
+                    file_previewer= {
+                        sort_mru = true,
+                        ignore_current_buffer = true,
+                        sort_lastused = true
+                    },
+                    file_sorter = {
+                        sort_mru = true,
+                        ignore_current_buffer = true,
+                        sort_lastused = true
+                    },
                 },
             })
         end

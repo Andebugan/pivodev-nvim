@@ -23,7 +23,7 @@ return
                             ["<M-d>"] = actions.delete_buffer,
                             ["<M-a>"] = actions.pin_all,
                             ["<M-u>"] = actions.unpin_all,
-                            ["<M-t>"] = actions.toggle_pin,
+                            ["<M-p>"] = actions.toggle_pin,
                         },
                         n = {
                             -- as above
