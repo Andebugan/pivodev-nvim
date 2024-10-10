@@ -1,6 +1,9 @@
 return {
     {
         "ahmedkhalf/project.nvim",
+        dependencies = {
+            'nvim-telescope/telescope.nvim'
+        },
         config = function()
             require("project_nvim").setup({
                 detection_methods = { "pattern" },
@@ -11,8 +14,16 @@ return {
                     "venv",
                     "note.tex",
                     ".session.vim"
-                }
+                },
             })
+            -- mappings
+            -- normal insert action
+            -- f      <C-f>  find_project_files
+            -- b      <C-b>  browse_project_files
+            -- d      <C-d>  delete_project
+            -- s      <C-s>  search_in_project_files
+            -- r      <C-r>  recent_project_files
+            -- w      <C-w>  change_working_directory
         end
     },
     {
@@ -38,9 +49,8 @@ return {
             local builtin = require("telescope.builtin")
             vim.keymap.set('n', '<leader>ff', builtin.find_files, {})
             vim.keymap.set('n', '<leader>fg', builtin.live_grep, {})
-            vim.keymap.set('n', '<leader>fb', builtin.buffers, {})
             vim.keymap.set('n', '<leader>fr', builtin.oldfiles, {})
-            vim.keymap.set('n', '<leader>fb', builtin.buffers, {})
+            vim.keymap.set('n', '<leader>ftb', builtin.buffers, {})
             vim.keymap.set('n', '<leader>fp', ':Telescope projects<CR>', {})
             require('telescope').setup({
                 defaults = {
@@ -66,8 +76,21 @@ return {
                             n = {
                                 ["d"] = "delete_buffer",
                             }
-                        }
-                    }
+                        },
+                        sort_mru = true,
+                        ignore_current_buffer = true,
+                        sort_lastused = true
+                    },
+                    file_previewer= {
+                        sort_mru = true,
+                        ignore_current_buffer = true,
+                        sort_lastused = true
+                    },
+                    file_sorter = {
+                        sort_mru = true,
+                        ignore_current_buffer = true,
+                        sort_lastused = true
+                    },
                 },
             })
         end
