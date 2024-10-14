@@ -18,8 +18,6 @@ local packages = {
             lspconfig.dockerls.setup({ capabilities = capabilities })
             lspconfig.docker_compose_language_service.setup({ capabilities = capabilities })
 
-            lspconfig.marksman.setup({ capabilities = capabilities })
-
             -- configurable
             if LANG_INSTALL_CONFIG.latex then
                 lspconfig.texlab.setup({ capabilities = capabilities })

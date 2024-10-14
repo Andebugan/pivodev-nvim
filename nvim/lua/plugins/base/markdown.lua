@@ -26,7 +26,15 @@ local plugins = {
             "tadmccorkle/markdown.nvim",
             ft = "markdown",
             opts = {
-                -- configuration here or empty for defaults
+                hooks = {
+                    -- Called when following links. Provided the following options:
+                    -- * 'dest' (string): the link destination
+                    -- * 'use_default_app' (boolean|nil): whether to open the destination with default application
+                    --   (refer to documentation on <Plug> mappings for explanation of when this option is used)
+                    follow_link = function(opts, _)
+                        vim.cmd("e " .. opts['dest'])
+                    end
+                },
             },
         }
     }
