@@ -98,14 +98,14 @@ vim.keymap.set('n', '<Leader>U', function()
     print(vim.fn.system({
         "git",
         "-C",
-        os.getenv('HOME') .. "/pivodev/",
+        os.getenv('HOME') .. "/.pivodev-nvim/",
         "fetch",
     }))
     print("Pulling update from repository...")
     print(vim.fn.system({
         "git",
         "-C",
-        os.getenv('HOME') .. "/pivodev/",
+        os.getenv('HOME') .. "/.pivodev-nvim/",
         "pull",
     }))
     print("Update complete, reload nvim to apply changes")
