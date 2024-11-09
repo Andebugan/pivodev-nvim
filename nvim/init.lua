@@ -18,7 +18,9 @@ vim.o.smartcase = true            -- set smart case for search
 vim.opt.fillchars = { eob = " " } -- disable tilde symbols after EOF
 
 vim.o.foldmethod = "syntax"       -- fold
-vim.o.foldlevel = 5;
+vim.o.foldlevel = 5;              -- fold depth
+
+vim.o.hlsearch = false            -- disable search highlight
 
 -- key mappings
 vim.g.mapleader = ' ' -- set space as the leader key
