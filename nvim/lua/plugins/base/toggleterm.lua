@@ -12,10 +12,11 @@ return {
             end
         })
 
-        vim.keymap.set('n', '<leader>tth', '<cmd>ToggleTerm direction=horizontal size=10<cr>', {})
-        vim.keymap.set('n', '<leader>ttv', '<cmd>ToggleTerm direction=vertical<cr>', {})
-        vim.keymap.set('n', '<leader>ttf', '<cmd>ToggleTerm direction=float<cr>', {})
-        vim.keymap.set('n', '<leader>ttt', '<cmd>ToggleTerm direction=tab<cr>', {})
+        vim.keymap.set('n', '<leader>tth', '<cmd>ToggleTerm name=main direction=horizontal size=10<cr>', {})
+        vim.keymap.set('n', '<leader>ttv', '<cmd>ToggleTerm name=main direction=vertical<cr>', {})
+        vim.keymap.set('n', '<leader>ttf', '<cmd>ToggleTerm name=main direction=float<cr>', {})
+        vim.keymap.set('n', '<leader>ttt', '<cmd>ToggleTerm name=main direction=tab<cr>', {})
+
         vim.keymap.set('n', '<leader>tts', '<cmd>TermSelect<cr>', {})
 
         local trim_spaces = true
