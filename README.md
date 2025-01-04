@@ -16,7 +16,7 @@ What to expect:
     - [ ] documentation integration
     - [x] project management (telescope projects)
     - [x] docker integration
-    - [ ] Markdown/LaTeX preview (live, if possible)
+    - [x] Markdown/LaTeX preview (live, if possible)
 - [x] navigation
     - [x] file navigator (oil)
     - [x] file/dir search (telescope)
