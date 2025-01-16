@@ -22,11 +22,9 @@ local plugins = {
         end
     },
     {
-        {
-            "tadmccorkle/markdown.nvim",
-            ft = "markdown",
-            opts = {},
-        }
+        "tadmccorkle/markdown.nvim",
+        ft = "markdown",
+        opts = {},
     },
     {
         'Kicamon/markdown-table-mode.nvim',

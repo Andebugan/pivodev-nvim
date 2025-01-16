@@ -18,5 +18,8 @@ return {
                 },
             })
         end
+        -- to install latex
+        -- 1. install tree-sitter-cli - sudo npm install -g tree-sitter tree-sitter-cli
+        -- 2. :TSInstallFromGrammar latex
     },
 }
