@@ -56,15 +56,26 @@ local packages = {
                 )
             end
 
-            if LANG_INSTALL_CONFIG.css then
+            if LANG_INSTALL_CONFIG.web or LANG_INSTALL_CONFIG.angular then
                 lspconfig.cssls.setup({ capabilities = capabilities })
-            end
-
-            if LANG_INSTALL_CONFIG.html then
                 lspconfig.html.setup({
                     capabilities = capabilities,
                     filetypes = { "html", "templ" },
                 })
+                lspconfig.ts_ls.setup({ capabilities = capabilities })
+            end
+
+            if LANG_INSTALL_CONFIG.angular then
+                local project_library_path = require('mason-registry').get_package("angularls"):get_install_path() .. "/node_modules"
+                local cmd = { "ngserver", "--stdio", "--tsProbeLocations", project_library_path, "--ngProbeLocations",
+                    project_library_path }
+
+                require 'lspconfig'.angularls.setup {
+                    cmd = cmd,
+                    on_new_config = function(new_config, new_root_dir)
+                        new_config.cmd = cmd
+                    end,
+                }
             end
 
             if LANG_INSTALL_CONFIG.go then

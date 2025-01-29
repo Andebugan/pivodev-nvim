@@ -3,9 +3,8 @@ return {
     latex = false,
     markdown_latex = false,
     csharp = false,
-    css = false,
-    html = false,
-    js = false,
+    angular = false,
+    web = false,
     dbtools = false,
     go = false
 }

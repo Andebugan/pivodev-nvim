@@ -23,9 +23,13 @@ return {
             -- custom config add packages
             if LANG_INSTALL_CONFIG.python then table.insert(packages, "pylsp") end
             if LANG_INSTALL_CONFIG.latex then table.insert(packages, "texlab") end
-            if LANG_INSTALL_CONFIG.csharp then table.insert(packages, "omnisharp") end
-            if LANG_INSTALL_CONFIG.html then table.insert(packages, "html") end
-            if LANG_INSTALL_CONFIG.css then table.insert(packages, "cssls") end
+            if LANG_INSTALL_CONFIG.csharp then table.insert(packages, "omnisharp@v1.39.8") end
+            if LANG_INSTALL_CONFIG.web then
+                table.insert(packages, "html")
+                table.insert(packages, "ts_ls")
+                table.insert(packages, "cssls")
+            end
+            if LANG_INSTALL_CONFIG.angular then table.insert(packages, "angularls") end
             if LANG_INSTALL_CONFIG.dbtools then table.insert(packages, "sqlls") end
             if LANG_INSTALL_CONFIG.go then table.insert(packages, "gopls") end
 
