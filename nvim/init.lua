@@ -26,12 +26,12 @@ vim.o.hlsearch = false            -- disable search highlight
 vim.g.mapleader = ' ' -- set space as the leader key
 
 -- tab keymaps
-vim.keymap.set('n', '<Leader>to', '<cmd>tabnew<cr>')   -- open new tab
-vim.keymap.set('n', '<Leader>tc', '<cmd>tabclose<cr>') -- close tab
-vim.keymap.set('n', '<Leader>tn', '<cmd>tabnext<cr>')  -- next tab
-vim.keymap.set('n', '<Leader>tp', '<cmd>tabprev<cr>')  -- previous tab
-vim.keymap.set('n', '<Leader>tf', '<cmd>tabfirst<cr>') -- first tab
-vim.keymap.set('n', '<Leader>tl', '<cmd>tablast<cr>')  -- last tab
+vim.keymap.set('n', '<Leader>tao', '<cmd>tabnew<cr>')   -- open new tab
+vim.keymap.set('n', '<Leader>tac', '<cmd>tabclose<cr>') -- close tab
+vim.keymap.set('n', '<Leader>tan', '<cmd>tabnext<cr>')  -- next tab
+vim.keymap.set('n', '<Leader>tap', '<cmd>tabprev<cr>')  -- previous tab
+vim.keymap.set('n', '<Leader>taf', '<cmd>tabfirst<cr>') -- first tab
+vim.keymap.set('n', '<Leader>tal', '<cmd>tablast<cr>')  -- last tab
 
 -- file keymaps
 vim.keymap.set('n', '<Leader>sf', '<cmd>w<cr>')  -- save current file

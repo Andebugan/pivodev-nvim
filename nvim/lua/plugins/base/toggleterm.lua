@@ -13,12 +13,22 @@ return {
             terminal_mappings = true,
         })
 
-        vim.keymap.set('n', '<leader>tth', '<cmd>ToggleTerm name=main direction=horizontal size=10<cr>', {})
-        vim.keymap.set('n', '<leader>ttv', '<cmd>ToggleTerm name=main direction=vertical<cr>', {})
-        vim.keymap.set('n', '<leader>ttf', '<cmd>ToggleTerm name=main direction=float<cr>', {})
-        vim.keymap.set('n', '<leader>ttt', '<cmd>ToggleTerm name=main direction=tab<cr>', {})
+        vim.keymap.set('n', '<leader>th', '<cmd>1ToggleTerm name=1 direction=horizontal size=10<cr>', {})
+        vim.keymap.set('n', '<leader>tv', '<cmd>1ToggleTerm name=1 direction=vertical<cr>', {})
+        vim.keymap.set('n', '<leader>tf', '<cmd>1ToggleTerm name=1 direction=float<cr>', {})
+        vim.keymap.set('n', '<leader>tt', '<cmd>1ToggleTerm name=1 direction=tab<cr>', {})
 
-        vim.keymap.set('n', '<leader>tts', '<cmd>TermSelect<cr>', {})
+        vim.keymap.set('n', '<leader>2th', '<cmd>2ToggleTerm name=2 direction=horizontal size=10<cr>', {})
+        vim.keymap.set('n', '<leader>2tv', '<cmd>2ToggleTerm name=2 direction=vertical<cr>', {})
+        vim.keymap.set('n', '<leader>2tf', '<cmd>2ToggleTerm name=2 direction=float<cr>', {})
+        vim.keymap.set('n', '<leader>2tt', '<cmd>2ToggleTerm name=2 direction=tab<cr>', {})
+
+        vim.keymap.set('n', '<leader>3th', '<cmd>3ToggleTerm name=3 direction=horizontal size=10<cr>', {})
+        vim.keymap.set('n', '<leader>3tv', '<cmd>3ToggleTerm name=3 direction=vertical<cr>', {})
+        vim.keymap.set('n', '<leader>3tf', '<cmd>3ToggleTerm name=3 direction=float<cr>', {})
+        vim.keymap.set('n', '<leader>3tt', '<cmd>3ToggleTerm name=3 direction=tab<cr>', {})
+
+        vim.keymap.set('n', '<leader>ts', '<cmd>TermSelect<cr>', {})
 
         local trim_spaces = true
         vim.keymap.set("v", "<space>s", function()
